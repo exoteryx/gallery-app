@@ -2,7 +2,7 @@ import type { ImagesResults } from "@/models/Images";
 import { ImagesSchemaWithPhotos } from "@/models/Images";
 import env from "./env";
 import { cache } from "react";
-import axios from "axios";
+
 export const fetchImages = async (url: string): Promise<ImagesResults | undefined> => {
   try {
       const res = await fetch(url,{
